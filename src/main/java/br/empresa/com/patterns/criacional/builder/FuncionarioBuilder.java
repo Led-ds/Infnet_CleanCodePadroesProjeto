@@ -1,10 +1,10 @@
-package br.empresa.com.modelo.builder;
+package br.empresa.com.patterns.criacional.builder;
 
-import br.empresa.com.modelo.abstracts.Funcionario;
-import br.empresa.com.modelo.clazz.FuncionarioModelo;
-import br.empresa.com.modelo.clazz.FuncionarioTercerizado;
-import br.empresa.com.modelo.enums.Cargo;
-import br.empresa.com.modelo.enums.Setor;
+import br.empresa.com.models.abstracts.Funcionario;
+import br.empresa.com.models.clazz.FuncionarioModelo;
+import br.empresa.com.models.clazz.FuncionarioTercerizado;
+import br.empresa.com.models.enums.Cargo;
+import br.empresa.com.models.enums.Setor;
 
 import java.util.List;
 

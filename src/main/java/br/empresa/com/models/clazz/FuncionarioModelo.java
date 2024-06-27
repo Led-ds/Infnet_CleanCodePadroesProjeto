@@ -1,12 +1,11 @@
-package br.empresa.com.modelo.clazz;
+package br.empresa.com.models.clazz;
 
-import br.empresa.com.modelo.enums.Cargo;
-import br.empresa.com.modelo.enums.Setor;
+import br.empresa.com.models.enums.Cargo;
+import br.empresa.com.models.enums.Setor;
 
 import java.util.List;
 
 public class FuncionarioModelo {
-
     private String nome;
     private List<String> telefones;
     private String endereco;
@@ -15,13 +14,13 @@ public class FuncionarioModelo {
     private Cargo cargo;
 
     public FuncionarioModelo(){}
-    public FuncionarioModelo(String nome, List<String> telefones, String endereco, Double salario, Setor setor, Cargo cargo) {
-        this.nome = nome;
-        this.telefones = telefones;
-        this.endereco = endereco;
-        this.salario = salario;
-        this.setor = setor;
-        this.cargo = cargo;
+    public FuncionarioModelo(final String prNome, final List<String> prTelefones, final String prEndereco, final Double prSalario, final Setor prSetor, final Cargo prCargo) {
+        this.nome = prNome;
+        this.telefones = prTelefones;
+        this.endereco = prEndereco;
+        this.salario = prSalario;
+        this.setor = prSetor;
+        this.cargo = prCargo;
     }
 
     public String getNome() {
