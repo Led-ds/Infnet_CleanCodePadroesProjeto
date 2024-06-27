@@ -25,6 +25,12 @@ public class FuncionarioTercerizado extends Funcionario {
         this.empresaContratada = empresaContratada;
     }
 
+
+
+    /* TODO
+     *  ::identificando bad smells::
+     *  -> O metodo toString()
+     * */
     @Override
     public String toString() {
         return "Tercerizado {" +

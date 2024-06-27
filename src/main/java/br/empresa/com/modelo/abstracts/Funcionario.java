@@ -16,6 +16,12 @@ public abstract class Funcionario {
 
     public Funcionario(){}
 
+
+    /* TODO
+     *  ::identificando bad smells::
+     *  -> O metodo construtor() têm muitos parâmetros, tanto aqui em Funcionário
+     *  quanto na class Funcionário Terceirizado
+     * */
     public Funcionario(final String prNome, final List<String> prTelefones, final String prEndereco, final Double prSalario, final Setor prSetor, final Cargo prCargo) {
         this.nome = prNome;
         this.telefones = prTelefones;
@@ -73,6 +79,14 @@ public abstract class Funcionario {
         this.cargo = cargo;
     }
 
+
+
+
+    /* TODO
+     *  ::identificando bad smells::
+     *  -> O metodo toString() tem código repetido tanto aqui em Funcionário
+     *  quanto na class Funcionário Terceirizado
+     * */
     @Override
     public String toString() {
         return "Funcionario {" +
